@@ -8,35 +8,141 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
+   margin: 0;
+    
+    display: flex;
+    }
+
 
 .content {
-  padding: 30px;
+  
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px; 
+  justify-content: center;
+
 }
 
 h2 {
   text-transform: uppercase;
+  
+  
 }
 
 p {
-  font-weight: bold;
-}
+  font-size:5;
+  }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
-form {
-  border: 1px solid #a9a9a9;
-  padding: 20px;
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  margin-bottom: 5px;
 }
+.form-input-control{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px; 
+  flex: 1; 
+  padding-top: 15px;
+  border: #fff;
+  width: 500px;
+  
+}
+
+
+#sign-in-form {
+  border: 1px solid #b4abab;      
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 650px;
+}
+#sign-up-form {
+  display: flex;
+  flex-direction: column;  
+  border:1px solid #b4abab;
+  padding: 15px;
+  width: 650px;
+}
+
+
+
+select {
+  height: 20px;
+  width: 200px;
+  font-size: 12px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  appearance: none;
+}
+
+.form-checkbox-control {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+
+.form-submit-control {
+  display: flex;
+  align-items: center; 
+  gap: 10px;  
+  padding: 20px;  
+  justify-content: center;       
+}
+
+
+.form-submit-control input[type="submit"] {
+  width: 100px;   
+  height: 30px; 
+  color: white;              
+  border: none;              
+  border-radius: 5px;        
+  font-size: 16px;           
+  cursor: pointer;           
+}
+
+
+.form-group-vertical-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-radio-control {
+  display: flex;
+  flex-direction:row ;
+  gap: 3px;
+  padding-top: 3px;
+}
+
+
 
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
+  
 }
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  width: 900px;
+   display: flex;
+    flex-direction: column; 
+    align-items: stretch;
+  
+
 }
 
 a {
@@ -46,28 +152,43 @@ a {
 
 label {
   font-weight: bold;
+  
+  display: block;
+
 }
 
 input {
   width: 100%;
-  height: 30px;
-  padding: 5px;
+  height: 25px;
 }
+
+
+#phone,#confirm-password,#password,#email,#name-field,#password-field,#login-field  {
+  padding-left: 10px;
+  width: 600px; 
+}
+#state,#city{
+  width: 280px;
+  height: 22px;
+  padding-left: 10px;
+}
+
 
 input[type="checkbox"],
 input[type="radio"] {
   width: max-content;
   height: max-content;
-  padding: 0;
+  
+ 
 }
 
 input[type="submit"] {
   width: unset;
   height: unset;
-  padding: 14px 20px;
+  
   background: #335eea;
   color: white;
-  font-size: 18px;
+  font-size: 10px;
   border: 1px solid #335eea;
   border-radius: 8px;
   appearance: none;
@@ -78,8 +199,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #294bbb;
+  
 }
 
 .form select {
-  height: 30px;
+  height: 20px;
+  
+}
+.form-header {padding-bottom: 10px;
 }
